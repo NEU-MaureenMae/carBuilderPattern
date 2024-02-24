@@ -1,5 +1,5 @@
 public class Car{
-    private final String brand, engineType, tranmission, color;
+    private final String brand, engineType, transmission, color;
     private final int passengerCap;
 
     private Car(CarBuilder builder) {
@@ -26,11 +26,11 @@ public class Car{
         return color;
     }
 
-    public String getPassengerCap(){
+    public int getPassengerCap(){
         return passengerCap;
     }
 
-    private static class CarBuilder(){
+    public static class CarBuilder(){
         private final String brand, engineType, tranmission, color;
         private final int passengerCap; 
 
@@ -63,5 +63,4 @@ public class Car{
             return new Car(this);
         }
     }
-
 }
