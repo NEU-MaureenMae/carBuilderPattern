@@ -30,11 +30,11 @@ public class Car{
         return passengerCap;
     }
 
-    public static class CarBuilder(){
-        private final String brand, engineType, tranmission, color;
-        private final int passengerCap; 
+    public static class CarBuilder{
+        private String brand, engineType, transmission, color;
+        private int passengerCap;
 
-        public CarBuilder brand(String brand) {
+        public CarBuilder brand(String brand){
             this.brand = brand;
             return this;
         }
